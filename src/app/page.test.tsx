@@ -7,5 +7,6 @@ describe("Page", () => {
     render(<Page />);
     expect(screen.getByText("Save and see your changes instantly.")).toBeInTheDocument();
     expect(screen.getByText("Deploy now")).toBeInTheDocument();
+    expect(screen.getByText("Read our docs")).toBeInTheDocument();
   });
 });
