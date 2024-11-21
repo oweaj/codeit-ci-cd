@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: ${{matrix.node}}
 
-      - name: npm Install
+      - name: Npm Install
         run: npm ci
 
       - name: Build Project
