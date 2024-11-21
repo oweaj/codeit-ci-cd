@@ -1,9 +1,6 @@
 name: build & testing
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -27,8 +24,8 @@ jobs:
       - name: Npm Install
         run: npm ci
 
-      - name: Run Test
-        run: npm run test
-
       - name: Build Project
         run: npm run build
+
+      - name: Run Test
+        run: npm run test    
