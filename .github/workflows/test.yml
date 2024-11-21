@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: ${{matrix.node}}
 
-      - name: Ci    
+      - name: Npm Install
         run: npm ci
 
       - name: Run Test
-        run: npm test
+        run: npm run test
 
       - name: Build Project
-        run: npm run build --if-present
+        run: npm run build
