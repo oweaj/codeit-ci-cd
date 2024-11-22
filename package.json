@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --coverage",
-    "test:cypress": "cypress run"
+    "test:cypress": "cypress run",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@sentry/nextjs": "^8.39.0",
