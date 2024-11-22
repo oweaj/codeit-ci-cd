@@ -10,7 +10,7 @@ jobs:
   cypress-run:
     executor:
       name: cypress/default
-      node-version: "18.7.0"
+      node-version: "20.0.0"
     steps:
       - cypress/install
       - cypress/run-tests:
