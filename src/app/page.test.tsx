@@ -5,6 +5,7 @@ import Page from "./page";
 describe("Page", () => {
   it("renders the page", () => {
     render(<Page />);
-    expect(screen.getByText("Save and see your changes instantly.")).toBeInTheDocument();
+    expect(screen.getByText(/Get started by editing/)).toBeInTheDocument();
+    expect(screen.getByText("Read our docs")).toBeInTheDocument();
   });
 });
